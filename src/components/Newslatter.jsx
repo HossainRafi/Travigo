@@ -16,6 +16,20 @@ const Newslatter = () => {
               Questions and Feedback? We would love to hear for you.
             </p>
           </div>
+          <form className="flex items-center justify-center relative">
+            <input
+              placeholder="Email Address"
+              name="email"
+              type={"email"}
+              className="py-2 px-5 ring-1 ring-slate-300 flex items-center shadow-md shadow-slate-200 w-96 lg:w-[85vw] text-base relative placeholder:text-slate-500 focus:outline-emerald-500"
+            />
+            <button
+              type="button"
+              className="text-base px-5 py-2 text-white bg-gradient-to-b from-emerald-500 to-green-500  transition-all duration-200 active:scale-90 absolute right-0 shadow-lg shadow-emerald-400"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </>
