@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import menu from "../images/menu.svg";
+
 const Navbar = ({ navlinks }) => {
+  const [popupState, setPopupState] = useState(false);
+  const [navState, setNavState] = useState(false);
+  const onTriggerPopup = () => setPopupState(!popupState);
+
+  const onNavScroll = () => {
+    if (window.scrollY > 180) {
+      setNavState(true);
+    } else {
+      setNavState(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", onNavScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onNavScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header>
+      <header
+        className={`
+        nav-default ${navState && "nav-sticky"}
+      `}
+      >
         <nav className="flex items-center justify-between travigo-container">
           <NavLink to={`/`} className="flex items-center">
             <img src={logo} alt="logo/img" className="w-22 h-9 object-fill" />
@@ -31,6 +56,7 @@ const Navbar = ({ navlinks }) => {
               <button
                 type="button"
                 className="flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer"
+                onClick={onTriggerPopup}
               >
                 <img
                   src={menu}
