@@ -12,6 +12,15 @@ const Memory = ({ memory: { title, text, subtitle, img, experience } }) => {
               className="w-auto h-[55vh] object-fill"
             />
           </div>
+          <div className="grid items-center w-full max-w-2xl lg:text-center">
+            <h1 className="text-5xl lg:text-4xl md:text-3xl font-bold text-slate-900 filter drop-shadow-lg">
+              {title}
+            </h1>
+            <h1 className="text-5xl lg:text-4xl md:text-3xl font-bold text-slate-900 filter drop-shadow-lg">
+              {subtitle}
+            </h1>
+            <p className="text-base my-5 sm:text-sm">{text}</p>
+          </div>
         </div>
       </div>
     </>
