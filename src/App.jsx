@@ -10,6 +10,7 @@ import {
   Banner,
   Newslatter,
 } from "./components";
+
 import {
   hero,
   navlinks,
@@ -19,7 +20,7 @@ import {
   pricingapi,
   bannerAPI,
   footerAPI,
-} from "./data/travigodata";
+} from "./data/data";
 
 const App = () => {
   return (
