@@ -25,6 +25,8 @@ const Navbar = ({ navlinks }) => {
     };
   }, []);
 
+  // console.log(popupState)
+
   return (
     <>
       <header
