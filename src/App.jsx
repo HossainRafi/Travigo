@@ -1,13 +1,24 @@
 import React from "react";
-import { Navbar, Hero, Footer } from "./components";
-import { hero, navlinks } from "./data/travigodata";
+import {
+  Navbar,
+  Hero,
+  Footer,
+  Memory,
+} from "./components";
+import {
+  hero,
+  navlinks,
+  memory,
+  footerAPI,
+} from "./data/travigodata";
 
 const App = () => {
   return (
     <>
       <Navbar navlinks={navlinks} />
       <Hero hero={hero} />
-      <Footer />
+      <Memory memory={memory} />
+      <Footer footerAPI={footerAPI} />
     </>
   );
 };
