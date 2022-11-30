@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import menu from "../images/menu.svg";
+import PopupMenu from "./PopupMenu";
 
 const Navbar = ({ navlinks }) => {
   const [popupState, setPopupState] = useState(false);
@@ -68,6 +69,7 @@ const Navbar = ({ navlinks }) => {
           </ul>
         </nav>
       </header>
+      <PopupMenu navlinks={navlinks} popupState={popupState} />
     </>
   );
 };
