@@ -14,13 +14,15 @@ const PopupMenu = ({ navlinks, popupState }) => {
         <ul className="flex items-start flex-col gap-3">
           {navlinks?.map((val, i) => (
             <li key={i}>
-              <NavLink to={`#`}>{val.link}</NavLink>
+              <NavLink to={`#`} className="hover:text-green-600 duration-500">
+                {val.link}
+              </NavLink>
             </li>
           ))}
           <li>
             <button
               type="button"
-              className="button-light sm:w-auto shadow-slate-300 rounded-lg"
+              className="button-light sm:w-auto shadow-slate-300 rounded-lg hover:scale-105 duration-500"
             >
               Join Us
             </button>

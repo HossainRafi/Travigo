@@ -36,12 +36,19 @@ const Navbar = ({ navlinks }) => {
       >
         <nav className="flex items-center justify-between travigo-container">
           <NavLink to={`/`} className="flex items-center">
-            <img src={logo} alt="logo/img" className="w-22 h-9 object-fill" />
+            <img
+              src={logo}
+              alt="logo/img"
+              className="w-22 h-9 object-fill hover:scale-105 duration-500"
+            />
           </NavLink>
-          <ul className="flex items-center lg:hidden gap-7">
+          <ul className="flex items-center lg:hidden gap-10">
             {navlinks?.map((val, i) => (
               <li key={i}>
-                <NavLink to={"#"} className="text-lg text-slate-900">
+                <NavLink
+                  to={"#"}
+                  className="text-lg text-slate-900 hover:text-green-600 duration-500"
+                >
                   {val.link}
                 </NavLink>
               </li>
@@ -49,7 +56,10 @@ const Navbar = ({ navlinks }) => {
           </ul>
           <ul className="flex items-center lg:hidden">
             <li>
-              <button type="button" className="button-emrald px-7 text-base">
+              <button
+                type="button"
+                className="button-emrald px-7 text-base hover:scale-105 duration-500"
+              >
                 Join Us
               </button>
             </li>
@@ -64,7 +74,7 @@ const Navbar = ({ navlinks }) => {
                 <img
                   src={menu}
                   alt="menu/svg"
-                  className="object-cover shadow-sm filter"
+                  className="object-cover shadow-sm filter hover:scale-110 duration-300"
                 />
               </button>
             </li>
