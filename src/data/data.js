@@ -123,7 +123,7 @@ export const pricingapi = {
 
 export const bannerAPI = {
   title: "The Greet Outdoors",
-  text: "Whislist Curated By Travigo.",
+  text: "Whislist Curated By GoTravel.",
   imgSrc: banner,
   btnText: "Explore More",
 };
@@ -138,7 +138,7 @@ export const footerAPI = {
       { link: "Menu" },
     ],
     [
-      { link: "Why Travigo?" },
+      { link: "Why GoTravel?" },
       { link: "Partner with Us" },
       { link: "FAQ" },
       { link: "Blog" },
