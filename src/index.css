@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
 
 @layer base {
   * {
@@ -28,7 +31,6 @@
   body::-webkit-scrollbar-thumb {
     @apply rounded-full bg-gradient-to-tr from-emerald-500 to-green-500;
   }
-
   /* container */
   .travigo-container {
     @apply w-[85vw] xl:w-[95vw] m-auto;
@@ -59,7 +61,7 @@
     transform: skewY(3deg) translateY(-30px); 
   }
 
-    /* navbar */
+    
   .nav-default {
     @apply flex items-center justify-center fixed top-8 lg:top-5 left-0 right-0 transition-all duration-300;
   }
