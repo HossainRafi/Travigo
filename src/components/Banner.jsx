@@ -16,7 +16,12 @@ const Banner = ({ bannerAPI: { title, text, btnText, imgSrc } }) => {
             {title}
           </h1>
           <p className="text-base sm:text-sm">{text}</p>
-          
+          <button
+            type="button"
+            className="py-1.5 px-5 bg-gradient-to-b from-gray-900 to-slate-800 text-slate-300 text-sm rounded-full shadow-lg shadow-slate-900 transition-all duration-300 active:scale-110"
+          >
+            {btnText}
+          </button>
         </div>
       </div>
     </>
