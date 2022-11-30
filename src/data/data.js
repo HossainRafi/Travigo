@@ -138,7 +138,7 @@ export const footerAPI = {
       { link: "Menu" },
     ],
     [
-      { link: "Why GoTravel?" },
+      { link: "Why GoWorld?" },
       { link: "Partner with Us" },
       { link: "FAQ" },
       { link: "Blog" },

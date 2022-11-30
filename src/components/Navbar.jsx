@@ -34,7 +34,7 @@ const Navbar = ({ navlinks }) => {
         nav-default ${navState && "nav-sticky"}
       `}
       >
-        <nav className="flex items-center justify-between travigo-container">
+        <nav className="flex items-center justify-between goworld-container">
           <NavLink to={`/`} className="flex items-center">
             <img
               src={logo}

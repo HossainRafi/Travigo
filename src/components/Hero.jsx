@@ -4,7 +4,7 @@ const Hero = ({ hero: { title, subtitle, btn1, btn2, text, img } }) => {
   return (
     <>
       <div className="flex flex-col bg-gradient-to-b from-emerald-200 to-white h-auto w-auto">
-        <div className="travigo-container grid items-start justify-items-center">
+        <div className="goworld-container grid items-start justify-items-center">
           <div className="grid items-center justify-items-center mt-36 mb-16 md:mt-28 md:mb-12">
             <h1 className="text-6xl font-bold lg:text-5xl md:text-4xl sm:text-3xl xsm:text-3xl text-black filter drop-shadow-lg mb-2">
               {title}

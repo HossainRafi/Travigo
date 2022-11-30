@@ -4,7 +4,7 @@ const Explore = ({ title, placesAPI }) => {
   return (
     <>
       <div className="relative my-7 md:mt-3">
-        <div className="travigo-container">
+        <div className="goworld-container">
           <div className="flex items-center justify-center text-center mb-11 md:mb-7">
             <h1 className="text-5xl lg:text-4xl md:text-3xl sm:text-2xl xsm:text-xl font-bold filter drop-shadow-lg text-slate-900">
               {title}
