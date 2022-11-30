@@ -123,7 +123,7 @@ export const pricingapi = {
 
 export const bannerAPI = {
   title: "The Greet Outdoors",
-  text: "Whislist Curated By GoTravel.",
+  text: "Whislist Curated By GoWorld.",
   imgSrc: banner,
   btnText: "Explore More",
 };
