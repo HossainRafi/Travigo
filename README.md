@@ -1,4 +1,4 @@
-# Project Name: [GoWorld](https://goworld.netlify.app)
+# Project Name: [Travigo](https://goworld.netlify.app)
 
 ## Project Live Link: https://goworld.netlify.app
 
